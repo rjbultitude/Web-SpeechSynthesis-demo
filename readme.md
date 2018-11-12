@@ -1,7 +1,7 @@
-# Voice Synthesis Demo
+# Speech Synthesis Demo
 
 This project provides a simple form that allows the user to convert text to 
-speech via the voice synthesis browser API. It also provides some controls for pitch, rate and voice.
+speech via the speech synthesis browser API. It also provides some controls for pitch, rate and voice.
 
 ## Dependencies
 None
