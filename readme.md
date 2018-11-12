@@ -6,6 +6,13 @@ speech via the voice synthesis browser API. It also provides some controls for p
 ## Dependencies
 None
 
-## Credits and references
+## Dev Dependencies
+HTTP server, to run the project in browser
 
+## Notes and plans
+* This demo uses native ES modules, so [browser support will be mixed](https://caniuse.com/#search=modules)
+* Add min-max ranges to `rate` and `pitch`
+* Make getVoices Promise based
+
+## Credits and references
 [Using the speech synthesis interface](https://manu.ninja/using-the-speech-synthesis-interface-of-the-web-speech-api/)
