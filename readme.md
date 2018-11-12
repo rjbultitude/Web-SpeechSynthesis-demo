@@ -3,6 +3,8 @@
 This project provides a simple form that allows the user to convert text to 
 speech via the speech synthesis browser API. It also provides some controls for pitch, rate and voice.
 
+[See the demo here](https://github.com/rjbultitude/Web-SpeechSynthesis-demo)
+
 ## Dependencies
 None
 
