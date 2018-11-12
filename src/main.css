@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
+html {
+  font-size: 75%;
+}
+
 body {
     font-family: 'Lora', serif;
     max-width: 960px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
+}
+
+.form__item-wrapper {
+  padding: 12px 0;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
+}
+
+button,
+input,
+select,
+label {
+  font-size: 1.8rem;
 }
 
 button {
@@ -21,10 +36,6 @@ button {
 label {
     width: 100px;
     display: inline-block;
-}
-
-.form__item-wrapper {
-    padding: 12px 0;
 }
 
 input,

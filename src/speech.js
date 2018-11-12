@@ -3,6 +3,7 @@ import domels from './domels.js';
 let synth;
 let voice;
 let voices;
+
 // Set the default languge
 let vLang = 'en-GB';
 
@@ -39,7 +40,7 @@ function populateVoiceList() {
   for(let i = 0; i < voices.length ; i++) {
     var option = document.createElement('option');
     option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
-    
+
     if(voices[i].default) {
       option.textContent += ' -- DEFAULT';
     }
@@ -55,11 +56,6 @@ function populateAndChange() {
   if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = populateVoiceList;
   }
-}
-
-if ('speechSynthesis' in window) {
-  synth = window.speechSynthesis;
-  loadVoices();
 }
 
 function saySomething(text, theLang, thePitch, theRate) {
@@ -78,6 +74,13 @@ function saySomething(text, theLang, thePitch, theRate) {
   utterance.voice = newVoice || voice;
   utterance.volume = 1;
   synth.speak(utterance);
+}
+
+if ('speechSynthesis' in window) {
+  synth = window.speechSynthesis;
+  loadVoices();
+} else {
+  console.warn('Sorry, but you\'re browser doesn\'t support speechSynthesis');
 }
 
 export default {
