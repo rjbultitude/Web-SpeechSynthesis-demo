@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <h1>Text to speech synthesis</h1>
+        <form>
+            <div class="form__item-wrapper">
+                <label for="speech-text">Text</label>
+                <input type="text" id="speech-text">
+            </div>
+            <div class="form__item-wrapper">
+                <label for="voice-rate">Rate</label>
+                <input type="number" id="voice-rate">
+            </div>
+            <div class="form__item-wrapper">
+                <label for="voice-pitch">Pitch</label>
+                <input type="number" id="voice-pitch">
+            </div>
+            <div class="form__item-wrapper">
+                <select id="voice-type"></select>
+            </div>
+            <div class="form__item-wrapper">
+                <button id="text-submit">Submit</button>
+            </div>
+        </form>
+        <script src="src/app.js" type="module"></script>
+    </body>
+</html>

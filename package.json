@@ -1,0 +1,14 @@
+{
+  "name": "voice-synthesis-master",
+  "version": "1.0.0",
+  "description": "This project provides a simple form that allows the user to convert text to  speech via the voice synthesis browser API. It also provides some controls for pitch, rate and voice.",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "author": "richard bultitude",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

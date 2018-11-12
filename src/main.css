@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+    font-family: 'Lora', serif;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    font-size: 22px;
+    padding: 6px;
+}
+
+label {
+    width: 100px;
+    display: inline-block;
+}
+
+.form__item-wrapper {
+    padding: 12px 0;
+}
+
+input,
+select {
+    height: 30px;
+}
+
+input[type='text'] {
+    width: 300px;
+}
+
+h1 {
+    display: inline-block;
+}
